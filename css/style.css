@@ -9,6 +9,7 @@
 .navbar-toggler{
     color: #fff!important;
 }
+
 .nav{
     display: flex;
     flex-direction: column;
@@ -31,6 +32,7 @@
     text-transform: uppercase;
     font-weight: 750;
     letter-spacing: 2px;
+    padding: 0 10px;
 }
 .navbar ul.nav{
     margin-right: 15%;
@@ -78,6 +80,7 @@ width: 100%;
     width: 100%;
     z-index: 1;
      }
+     
 /* imagenes del carousel */
  #carouselExampleIndicators .carousel-inner .carousel-item{
      position: relative;
