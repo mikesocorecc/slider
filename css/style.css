@@ -1,0 +1,128 @@
+/* ***********************Barra de navegacion *************************************/
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    padding: 25px 0;
+    background: radial-gradient(black, #0b0b0bc9);
+}
+.navbar-toggler{
+    color: #fff!important;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+@media only screen and (min-width: 768px ) {
+    .nav{
+        display: flex;
+        flex-direction: row;
+       justify-content: flex-end;
+        width: 100%;
+    }
+    .navbar{
+        background: none;
+    }
+}
+.navbar .logo{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 750;
+    letter-spacing: 2px;
+}
+.navbar ul.nav{
+    margin-right: 15%;
+
+}
+
+.navbar ul.nav li:hover{
+    background: rgba(255,255,255, 0.9);
+    color: #000;
+    
+}
+
+ .navbar ul.nav li a{
+     color: #fff;
+     font-size: 1em;
+     font-weight: 500;
+     
+ }
+
+ .navbar ul.nav li a:hover{
+      color: #000; 
+
+ }
+ /********************************** slider o carousel **************************************************/
+ #carouselExampleIndicators{
+     position: relative;
+     height: 100vh;
+     width: 100%;
+
+ }
+ #carouselExampleIndicators .carousel-inner{
+position: relative;
+height: 100%;
+width: 100%;
+
+ }
+ /* Agregamos un fondo oscuro a la imagen */
+ #carouselExampleIndicators .carousel-inner::before{
+    position: absolute;
+    content: '';
+    background: rgba(0,0,0, 0.45);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+     }
+/* imagenes del carousel */
+ #carouselExampleIndicators .carousel-inner .carousel-item{
+     position: relative;
+     height: 100%;
+     width: 100%;
+     background: url(https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+     background-size: 100% 100%;
+     background-position: center;
+ }
+ #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
+     background: url(https://images.pexels.com/photos/777001/pexels-photo-777001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+     background-size: 100% 100%;
+     background-position: center;
+ }
+ #carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
+     background: url(https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+     background-size: 100% 100%;
+     background-position: center;
+ }
+
+ #carouselExampleIndicators .carousel-inner .carousel-item .info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+ }
+ #carouselExampleIndicators .carousel-inner .carousel-item h1{
+     color: #fff;
+     height: auto;
+     width: 100%;
+     z-index: 1;
+     text-align: center;
+     font-size: 4.5em;
+     font-weight: 750;
+     /* -webkit-box-reflect:below 0px linear-gradient(transparent, rgba(0,0,0, 0.5)); */
+ }
+ #carouselExampleIndicators .carousel-inner .carousel-item p{
+     color: #ccc;
+     height: auto;
+     width: 100%;
+     z-index: 1;
+     text-align: center;
+     font-size: 1.2em;
+     font-weight: 500;
+ }
